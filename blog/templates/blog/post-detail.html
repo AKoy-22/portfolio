@@ -1,0 +1,26 @@
+{% extends "base.html" %}  <!-- do to settings.py and add to TEMPLATES DIRS: BASE_DIR/ "templates"-->
+{% load static%}
+
+{% block title %}
+   {{post.title}}
+{% endblock %}
+
+{% block css_files%}
+<link rel="stylesheet" href="{% static "blog/post-detail.css" %}"/>
+{% endblock%}
+
+{%block contents%}
+<section id="summary">
+    <h2>{{post.title}}</h2>
+    <article>
+        <img src="{% static 'blog/images/'|add:post.image  %}" alt="post.title">
+        <address>By {{post.author |title }}</address> <!--title filter from django will capitalize the first letter-->
+        <div>
+            Last updated on <time>{{post.date|date:"d M Y"}}</time>
+        </div>
+    </article>
+</section>
+<main>
+    <p>{{post.content|linebreaks}}</p>  <!--linebreaks will be preserved from the dummy content-->
+</main>
+{% endblock %}

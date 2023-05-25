@@ -1,0 +1,25 @@
+{% extends "base.html" %}  <!-- do to settings.py and add to TEMPLATES DIRS: BASE_DIR/ "templates"-->
+{% load static%}
+
+{% block title %}
+    My Blog IS DISPLAYED HERE !!! 
+{% endblock %}
+
+{% block css_files%}
+    <link rel="stylesheet" href="{% static "blog/all-posts.css" %}"/>
+    <link rel="stylesheet" href="{% static "blog/post.css" %}"/>
+{% endblock%}
+
+{%block contents%}
+<section id="all-posts">
+    <h2>My Collected Posts</h2>
+
+    <ul>
+        {% for p in all_posts %}
+            {% include  "blog/includes/post.html" %}
+        {% endfor %}
+     
+        
+    </ul>
+</section>
+{%endblock%}

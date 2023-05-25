@@ -1,0 +1,42 @@
+{% extends "base.html" %}  <!-- do to settings.py and add to TEMPLATES DIRS: BASE_DIR/ "templates"-->
+{% load static%}
+
+{% block title %}
+    My Blog IS DISPLAYED HERE !!! 
+{% endblock %}
+
+{% block css_files%}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}"/>
+    <link rel="stylesheet" href="{% static "blog/post.css" %}"/>
+{% endblock%}
+
+{% block contents %}
+
+
+    <section id="welcome">
+        <header>
+            <img  src="{% static 'blog/images/beach.jpg'%}" alt="author of the blog"/>
+            <h2> Akiko's Blog</h2>
+        </header>
+        <p>Hi, I am Akiko and I love to blog about tech and wround the world!</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My latest thoughts</h2>
+        <ul>
+            {% for p in posts  %}
+                {% include  "blog/includes/post.html" %}  <!--p and posts is accessible in post.html as well -->
+            {% endfor %}
+             
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>What I do</h2>
+        <p>I love programming and I love exploring technology in general</p>
+        <p>My goal is to keep growing as a develoepr </p>
+    </section>
+
+
+    <h1>Welcome to my blog </h1>
+{%endblock%}
