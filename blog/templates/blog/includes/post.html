@@ -4,7 +4,7 @@
 <li>
     <article class="post">
         <a href="{% url 'post-detail-page' slug=p.slug %}" >  <!--receives slug--> 
-            <img src="{% static 'blog/images/'|add:p.image  %}" alt="{{ p.title }}"/> <!--add: adds a value in front of | -->
+            <img src="{% static 'blog/images/'|add:p.image_name  %}" alt="{{ p.title }}"/> <!--add: adds a value in front of | -->
             <div class="post__content">
                 <h3>{{p.title}} </h3> <!--post['title'] in python but different in django html-->
                 <p>
