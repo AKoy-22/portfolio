@@ -3,27 +3,30 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
   }
   
   .post a {
     text-decoration: none;
-    color: black;
+    color: #6A78A9;
     transition: all 0.2s ease;
-    padding: 1rem;
+    padding: 1rem;    
+    border-radius: 8px;
+
   }
   
   .post a:hover,
   .post a:active {
     transform: scale(1.1);
-    background-color: #390281;
-    color: white;
+    background-color: #acccd3;
+    color: #EDEDED;
   }
   
   .post img {
-    width: 5rem;
-    height: 5rem;
+    width: 25rem;
+    height: 15rem;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 5%;
   }
   
   .post h3 {

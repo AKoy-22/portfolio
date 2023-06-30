@@ -1,0 +1,31 @@
+{% extends "base.html" %}  <!-- do to settings.py and add to TEMPLATES DIRS: BASE_DIR/ "templates"-->
+{% load static%}
+
+{% block title %}
+    My Portfolio 
+{% endblock %}
+
+{% block css_files%}
+    <link rel="stylesheet" href="{% static "blog/about-me.css" %}"/>
+{% endblock%}
+
+{%block contents%}
+<section id="container">
+    <h2 id="about-title">About Me</h2>
+    <img  src="{% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/>
+
+    <p>I am transitioning into computer science and software development after a successful career in banking, 
+        bringing a unique perspective and valuable skills from working in prestigious financial centers like London, 
+        Tokyo, and Sydney. With an exceptional academic record and proficiency in programming languages including Python, Java, C#, 
+        JavaScript, PHP, and SQL, I possess a diverse skill set that enables me to approach software development projects 
+        effectively and achieve optimal results. 
+    </p>
+    <p>
+       Alongside my expertise in data storage, retrieval systems, and visualization tools, 
+        I have honed essential skills such as project management, problem-solving, and interpersonal communication throughout my 
+        banking career. Fluent in English, Japanese, and with conversational French skills, I am a versatile professional ready 
+        to thrive in the rapidly evolving field of technology. With a strong work ethic, attention to detail, and a drive for 
+        excellence, I am poised to make a significant impact in the exciting world of computer science and software engineering.
+    </p>
+</section>
+{%endblock%}

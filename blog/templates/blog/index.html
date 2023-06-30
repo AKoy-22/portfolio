@@ -2,7 +2,7 @@
 {% load static%}
 
 {% block title %}
-    My Blog IS DISPLAYED HERE !!! 
+    My Portfolio 
 {% endblock %}
 
 {% block css_files%}
@@ -15,16 +15,16 @@
 
     <section id="welcome">
         <header>
-            <img  src="{% static 'blog/images/mountains.jpg'%}" alt="author of the blog"/>
-            <h2> Akiko's Blog</h2>
+            <img  src="{% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/>
+            <h2> My Portfolio</h2>
         </header>
-        <p>Hi, I am Akiko and I love to blog about tech and wround the world!</p>
+        <p>Hi, my name is Akiko. I am embarking on an exciting transition into the dynamic field of computer science and software development after a successful career in banking industry. Leveraging my experience as a banker, which included working in prestigious financial centers such as London, Tokyo, and Sydney, I bring a unique perspective and valuable skills to my new endeavor.</p>
     </section>
 
     <section id="latest-posts">
-        <h2>My latest thoughts</h2>
+        <h2>Some of My Latest Projects</h2>
         <ul>
-            {% for p in posts  %}
+            {% for p in object_list  %}
                 {% include  "blog/includes/post.html" %}  <!--p and posts is accessible in post.html as well -->
             {% endfor %}
              
@@ -32,11 +32,11 @@
     </section>
 
     <section id="about">
-        <h2>What I do</h2>
-        <p>I love programming and I love exploring technology in general</p>
-        <p>My goal is to keep growing as a develoepr </p>
+        <h2>About myself</h2>
+        <p>
+            I am embarking on an exciting transition into the dynamic field of computer science and software development following a successful career in the banking industry. 
+        </p>
     </section>
 
 
-    <h1>Welcome to my blog </h1>
 {%endblock%}
