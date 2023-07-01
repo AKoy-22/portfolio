@@ -12,20 +12,76 @@
 {%block contents%}
 <section id="container">
     <h2 id="about-title">About Me</h2>
-    <img  src="{% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/>
+    <div id="content">
+      <img id="me" src=" {% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/>
+      <p>With a background in project finance and experience working in a prominent international bank, I have acquired a 
+        plethora of transferable skills. These skills, combined with my passion for programming, position me to excel as a software 
+        engineer. The unique skill set possessed by project finance bankers holds tremendous potential in driving success within the 
+        realm of software engineering.</div>
+      </p>
+</section>
+    
+    <section id='card' style="background-color: rgba(232, 254, 232, 0.6); "   >
+        <img id="card-img" src="{% static 'blog/images/prob-solving.svg'%}" alt="author of the blog"/>
+        <div class="card-content">
+            <p><strong>Problem Solving Skills: </strong><br/> Project finance bankers excel at solving complex financial problems and overcoming 
+                implementation challenges, which directly translates into software engineering where innovative solutions are 
+                needed to tackle technical hurdles. The critical thinking and diverse problem-solving approach greatly contribute 
+                to efficient and effective software development.
+            </p>
+        </div>
+    </section>
 
-    <p>I am transitioning into computer science and software development after a successful career in banking, 
-        bringing a unique perspective and valuable skills from working in prestigious financial centers like London, 
-        Tokyo, and Sydney. With an exceptional academic record and proficiency in programming languages including Python, Java, C#, 
-        JavaScript, PHP, and SQL, I possess a diverse skill set that enables me to approach software development projects 
-        effectively and achieve optimal results. 
-    </p>
-    <p>
-       Alongside my expertise in data storage, retrieval systems, and visualization tools, 
-        I have honed essential skills such as project management, problem-solving, and interpersonal communication throughout my 
-        banking career. Fluent in English, Japanese, and with conversational French skills, I am a versatile professional ready 
-        to thrive in the rapidly evolving field of technology. With a strong work ethic, attention to detail, and a drive for 
-        excellence, I am poised to make a significant impact in the exciting world of computer science and software engineering.
-    </p>
+    <section id='card'  style="background-color:rgba(254, 232, 232, 0.6)">
+        <img id="card-img" src="{% static 'blog/images/analytical.svg'%}" alt="author of the blog"/>
+        <div class="card-content">
+            <p><strong>Analytical Mindset:</strong> <br/>  With expertise in financial analysis and risk assessment, project finance bankers 
+                bring a deep understanding of these aspects to software engineering. Their ability to evaluate project financial 
+                viability, conduct thorough analyses, and implement risk management strategies ensures successful software solution 
+                delivery within budget constraints.
+            </p>
+        </div>
+    </section>
+
+    <section id='card' style="background-color: rgba(232, 237, 254, 0.6);"> 
+        <img id="card-img" src="{% static 'blog/images/teamwork.svg'%}" alt="author of the blog"/>
+        <div class="card-content">
+            <p><strong>Interdisciplinary Perspective: </strong><br/> Collaborating with various stakeholders in project finance, such as financial 
+                institutions, legal teams, contractors, sponsors, and offtakers equips project finance bankers with strong
+                interpersonal skills and the ability to navigate different perspectives. In software engineering, effective 
+                communication and collaboration are vital within multidisciplinary teams, making a project finance banker's 
+                background invaluable in bridging gaps between departments and facilitating seamless communication among software 
+                engineers, designers, and project managers.
+            </p>
+        </div>
+    </section>
+
+    <section id='card' style="background-color: rgba(232, 254, 243, 0.6); ">
+        <img id="card-img" src="{% static 'blog/images/proj.svg'%}" alt="author of the blog"/>
+        <div class="card-content">
+            <p><strong>Project Management Skills:</strong> <br/> Well-versed in project management methodologies, project 
+                finance bankers oversee multiple aspects of project implementation, which can be leveraged in software engineering.
+                 My organizational skills, ability to prioritize tasks, and results-oriented approach contribute to effective 
+                 planning, execution, and monitoring of software development projects. This ensures successful project delivery 
+                 within specified timelines.
+                </p>
+        </div>
+    </section>
+
+    <section id='card' style="background-color:  rgba(194, 193, 213, 0.5); "> 
+        <img id="card-img" src="{% static 'blog/images/detail.svg'%}" alt="author of the blog"/>
+        <div class="card-content">
+            <p><strong>Attention to Detail: </strong><br/> In both project finance and software engineering, meticulous attention to detail is 
+                essential for ensuring smooth integration and functionality. The analytical and harmonization skills of project 
+                finance bankers can be applied to software development, enabling effective integration of modules, classes, and 
+                components to create a cohesive application.</p>
+        </div>
+    </section>
+
+    <section id="container">
+    <div>
+        <a href='www.linkedin.com/in/akiko-koyama'><img id='logo' src="{% static 'blog/images/LI-In-Bug.png'%}"/></a>
+        <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark-white.svg'%}"/></a>
+    </div>
 </section>
 {%endblock%}

@@ -5,14 +5,14 @@
   background-size: cover;
   /* background: linear-gradient(to right top, #BDD8C4, #99B7C0);
     background-color:#99B7C0 ; */
-  padding: 6rem 12%;
+  padding: 2rem 8%;
 
 }
 
 #welcome header {
   display: flex;
   align-items: flex-start;
-  margin: 5rem auto;
+  margin: 2rem auto;
 }
 
 #welcome img {

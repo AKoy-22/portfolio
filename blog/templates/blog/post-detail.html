@@ -47,11 +47,19 @@
 <main>
     <h2>About this Project</h2>
     <p>{{post.content|linebreaks}}</p>  <!--linebreaks will be preserved from the dummy content-->
-    <a href="/"> github link</a>
+
+    <a href="https://github.com/AKoy-22/Algebraic_Expression"> Github link to the peoject repository</a>
 </main>
 
 <main>
     <h2>Images: </h2>
+    <section >
+        <ul id='image-list'> 
+            <li><img src="{{post.image1.url}}" alt="app image"></li>
+            <li><img src="{{post.image2.url}}" alt="app image"></li>
+            <li><img src="{{post.image3.url}}" alt="app image"></li>
+        </ul>
+    </section>
 
 </main>
 

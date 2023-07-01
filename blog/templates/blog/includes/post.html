@@ -2,7 +2,9 @@
 <li>
     <article class="post">
         <a href="{% url 'post-detail-page' slug=p.slug %}" >  <!--receives slug--> 
+            <div class="post__image">
             <img src="{{ p.image.url }}" alt="{{ p.title }}"/> <!--add: adds a value in front of | -->
+            </div>
             <div class="post__content">
                 <h3>{{p.title}} </h3> <!--post['title'] in python but different in django html-->
                 <p>

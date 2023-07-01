@@ -18,6 +18,7 @@ body {
     color: #EDEDED;
     text-align: center;
 }
+
 #container {
     text-align: center;
     width: 100%;
@@ -25,7 +26,14 @@ body {
     padding-right: 10rem;
 }
 
-img {
+#container p{
+  color: #EDEDED;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 3rem;
+}
+
+#me {
     width: 12rem;
     height: 12rem;
     padding: 0.5rem;
@@ -41,8 +49,41 @@ img {
   }
 
   p{
-    color: #EDEDED;
+    color:  #324851;  
     font-size: 1.3rem;
     text-align:justify;
   }
 
+  #logo{
+    width: 3rem;
+    height: auto;
+    margin: 1rem;
+
+  }
+  
+  #card {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+
+  }
+  
+  #card-img {
+    width: 8rem;
+    height: 8rem;
+    padding: 0.5rem;
+    background-color: #EDEDED;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #EDEDED;
+    border-radius: 12px;
+    margin-right: 1rem;
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+  }
+  

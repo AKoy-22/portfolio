@@ -26,6 +26,10 @@ class Post(models.Model):
     excerpt = models.CharField(max_length=150)
     #image_name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='images', null=True)
+    image1=models.ImageField(upload_to='images', null=True)
+    image2=models.ImageField(upload_to='images', null=True)
+    image3=models.ImageField(upload_to='images', null=True)
+    link=models.CharField(max_length=100)
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True)  # db_index=True is set automatically
     content = models.TextField(validators=[MinLengthValidator(10)])

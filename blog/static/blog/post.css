@@ -22,10 +22,10 @@
     color: #EDEDED;
   }
   
-  .post img {
-    width: 25rem;
-    height: 15rem;
-    object-fit: cover;
+  .post a img {
+    width: 80%;
+    height: auto;
+    max-height: 15rem;
     border-radius: 5%;
   }
   
