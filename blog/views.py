@@ -21,6 +21,11 @@ from .forms import CommentForm
 class AboutView(View):
     def get(self, request):
         return render(request, "blog/about-me.html")
+    
+
+class SkillsView(View):
+    def get(self, request):
+        return render(request, "blog/my-skills.html")
 
 
 class StartingView(ListView):
