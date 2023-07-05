@@ -24,13 +24,14 @@ body {
     width: 100%;
     padding-left: 10rem;
     padding-right: 10rem;
+
 }
 
 #container p{
   color: #EDEDED;
   font-size: 1.5rem;
   text-align: justify;
-  margin: 3rem;
+  margin: 2rem;
 }
 
 #me {
@@ -67,7 +68,7 @@ body {
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
-
+    box-shadow: 0 4px 8px -2px #324851;
   }
   
   #card-img {

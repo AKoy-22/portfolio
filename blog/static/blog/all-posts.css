@@ -12,6 +12,7 @@ body {
 
   #intro {
     font-size: 1.5rem;
+    color: #EDEDED;
   }
   
   #all-posts {
@@ -49,8 +50,9 @@ body {
   }
   
   .post a {
-    height: 22rem;
-      background-color: #EDEDED;
+    padding: 1rem 0.2rem;
+    height: 27rem;
+    background-color: #EDEDED;
     transform-origin: center;
     box-shadow: 0 2px 8px #34675C;
     border-radius: 12px;

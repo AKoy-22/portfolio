@@ -11,19 +11,18 @@
 
 {%block contents%}
 <section class="container">
-    <h2 id="about-title">My Skills</h2>
-    <div id="content">
-      <img id="me" src=" {% static 'blog/images/woman-notebook.svg'%}" alt="author of the blog"/>
-      <p>With a dedicated focus on my studies and a strong passion for acquiring new skills, I am on the verge of successfully Complementing 
-        a two-year diploma in Computing Studies and Information Systems at Douglas College. Complementing my academic journey, 
-        I have diligently expanded my knowledge through online platforms such as Udemy, LinkedIn Learning, and DataCamp to bridge 
-        any gaps and enhance my skill set. This commitment to continuous learning has resulted in a remarkable GPA of 3.84 and 
-        recognition on the Dean's list for my academic achievements in 2023. Additionally, I am proud to have received prestigious 
-        awards, including the Certificate of Achievement for the International Student Scholarship in 2022, as well as the Douglas 
-        College International Education Entrance Scholarship and entrance award in 2021. These accolades reflect my dedication and 
-        commitment to excellence in my educational pursuits. Now equipped with a robust foundation and a diverse range of technical 
-        competencies, I am ready to showcase my expertise in various areas of technology.</div>
-      </p>
+   <header id="header-container">
+        <img id="me" src=" {% static 'blog/images/woman-notebook.svg'%}" alt="author of the blog"/>
+        <h2 id="about-title">My Skills</h2>
+   </header>
+    <div>
+      <p>Driven by a passion for learning and an unwavering dedication to my studies, I am about to complete a two-year diploma 
+        in Computing Studies and Information Systems at Douglas College. Through online platforms like Udemy, LinkedIn Learning, 
+        and DataCamp, I have continuously expanded my knowledge and skills, earning a remarkable GPA of 3.84 and recognition on 
+        the Dean's list in 2023. Moreover, I have been honored with prestigious awards, including the International Student 
+        Scholarship, the Douglas College International Education Entrance Scholarship, and an entrance award. Equipped with a 
+        solid foundation and diverse technical competencies, I am poised to demonstrate my expertise in various technology domains.      </p>
+    </div>
 </section>
     {% comment %} 246, 255, 231, {% endcomment %}
 <section class='card' style="background-color:  rgba(200, 235, 170, 0.5); "   >
@@ -34,13 +33,11 @@
     
     <div class="card-content">
         <ul> 
-            <li>Proficient in Java, Python, PHP, and JavaScript programming languages for application development</li>
-            <li>Strong understanding of object-oriented programming concepts, including inheritance, polymorphism, and encapsulation</li>
-            <li>Experience in GUI design and event handling to create interactive user interfaces</li>
-            <li>Knowledge of database programming and connectivity for integrating applications with databases</li>
-            <li>Familiarity with file input/output operations and exception handling for efficient data manipulation</li>
-            <li>Understanding of software development best practices and adherence to coding conventions</li>
-            <li>Ability to write clean and maintainable code, following proper coding standards</li>
+            <li>Proficient in Java, Python, PHP, and JavaScript for application development</li>
+            <li>Strong understanding of object-oriented programming, including inheritance, polymorphism, and encapsulation</li>
+            <li>Experience in GUI design, event handling, and creating interactive user interfaces</li>
+            <li>Knowledge of database programming and connectivity for seamless integration with databases</li>
+            <li>Familiarity with file input/output operations, exception handling, and software development best practices for efficient data manipulation</li> 
         </ul>
     </div>
 </section>
@@ -51,8 +48,15 @@
         <p><strong>Web Development </strong></p> 
         <img class="card-img" src="{% static 'blog/images/web.svg'%}" alt="author of the blog"/> 
     </div>
+
+    <div class="card-content">
         <ul>
-            <li>Designing and developing dynamic web pages using JavaScript</li>
+            <li>Designing and developing dynamic web pages using JavaScript and front-end frameworks like React.js and Vue.js with URL routing</li>
+            <li>Building server-side applications using Java (Servlets/JSP), Spring MVC, and SpringBoot</li>
+            <li>Creating backend applications with Django framework integrated into the frontend</li>
+            <li>Utilizing PHP for server-side scripting, handling forms, files, and associative arrays</li>
+            <li>Implementing server-side applications using Node.js, Express framework, and connecting to databases</li>
+            {% comment %} <li>Designing and developing dynamic web pages using JavaScript</li>
             <li>Working with JavaScript front-end frameworks like React.js, Vue.js, and implementing URL routing</li>
             <li>Building server-side applications using Java and frameworks such as Servlets/JSP, Spring MVC, and SpringBoot</li>
             <li>Building backend applications using Django framework and integrating them with the frontend</li>
@@ -61,21 +65,25 @@
             <li>Implementing secure transactions with databases and manipulating files and directories</li>
             <li>Managing sessions and cookies for web applications</li>
             <li>Building server-side applications using Node.js and Express framework, and connecting them to databases</li>
-            <li>Understanding and implementing asynchronous JavaScript concepts such as Promises, Fetch API, and Async-await</li>
+            <li>Understanding and implementing asynchronous JavaScript concepts such as Promises, Fetch API, and Async-await</li> {% endcomment %}
         </ul>
-        </p>
     </div>
 </section>
 
     <section class='card' style="background-color: rgba(255, 230, 153, 0.6);"> 
         <div class="card-title">  
-            <p><strong>Software Engineering Theory & Principles </strong></p>
+            <p><strong>Software Eng. </br>Theory & Principles </strong></p>
             <img class="card-img" src="{% static 'blog/images/internetuser.svg'%}" alt="author of the blog"/>
         </div>
         
         <div class="card-content">
             <ul>
-                <li>Understanding and applying software engineering principles, methodologies, and best practices</li>
+                <li>Proficient in software engineering principles, methodologies, and best practices.</li>
+                <li>Skilled in object-oriented design, design patterns, and UML.</li>
+                <li>Effective collaboration in agile development teams for successful project delivery.</li>
+                <li>Expertise in Agile practices (Scrum, Kanban, XP) and version control systems.</li>
+                <li>Knowledgeable in comprehensive software testing, cost estimation (LOC, FP), and basis path testing.</li>
+                {% comment %} <li>Understanding and applying software engineering principles, methodologies, and best practices</li>
                 <li>Proficient in object-oriented design and implementation of design patterns</li>
                 <li>Experience in requirements analysis and utilizing Unified Modeling Language (UML)</li>
                 <li>Collaborating effectively in agile development teams and managing software projects</li>
@@ -84,7 +92,7 @@
                 <li>Knowledge of white-box and black-box testing techniques for comprehensive software testing</li>
                 <li>Understanding and applying cost prediction methods such as Lines of Code (LOC) and Function Points (FP)</li>
                 <li>Conducting risk analysis and implementing risk management strategies in software development projects</li>
-                <li>Experience in basis path testing for thorough test coverage and fault detection</li>
+                <li>Experience in basis path testing for thorough test coverage and fault detection</li> {% endcomment %}
             </ul>
         </div>
     </section>
@@ -97,14 +105,19 @@
         
         <div class="card-content">
                 <ul>
-                    <li>Comprehensive understanding of database concepts and database management systems (DBMS)</li>
+                    <li>Comprehensive understanding of database concepts and DBMS</li>
+                    <li>Proficient in data modeling, designing, and implementing relational database schemas</li>
+                    <li>Expertise in SQL for creating, maintaining, and querying databases</li>
+                    <li>Knowledgeable in indexing, query optimization, and ACID (Atomicity, Consistency, Isolation, Durability) transaction management</li>
+                    <li>Hands-on experience with MongoDB and proficient in CRUD operations</li>
+                    {% comment %} <li>Comprehensive understanding of database concepts and database management systems (DBMS)</li>
                     <li>Proficient in data modeling, designing, and implementing relational database schemas</li>
                     <li>Expertise in creating, maintaining, and querying databases using SQL</li>
                     <li>Knowledgeable in indexing, query optimization, and transaction processing for efficient database operations</li>
                     <li>Ability to apply denormalization techniques and design star schemas for optimized data storage and retrieval</li>
                     <li>Hands-on experience with noSQL databases, such as MongoDB, and proficient in performing CRUD operations</li>
                     <li>Understanding of MapReduce functions for data analytics and distributed processing</li>
-                    <li>Proficient in implementing and managing ACID (Atomicity, Consistency, Isolation, Durability) transactions</li>
+                    <li>Proficient in implementing and managing ACID (Atomicity, Consistency, Isolation, Durability) transactions</li> {% endcomment %}
                 </ul>
         </div>
     </section>
@@ -116,19 +129,25 @@
         </div>
         <div class="card-content">
             <ul>
-                <li>Foundations of Big Data Analytics and Data Mining Process</li>
+                <li>Strong foundation in Big Data Analytics and Data Mining</li>
+                <li>Skilled in requirement elicitation, hypothesis development, and data exploration</li>
+                <li>Proficient in utilizing technology stacks for Data Analytics, considering the 4 V's of big data</li>
+                <li>Expertise in collecting, transforming, and modeling data</li>
+                <li>Adept at performing statistical analysis and creating impactful visualizations using tableau and python</li>
+                <li>Experienced in designing intuitive dashboards and reports for data analysis</li>
+                {% comment %} <li>Foundations of Big Data Analytics and Data Mining Process</li>
                 <li>Requirement elicitation, hypothesis development, and data exploration</li>
                 <li>Understanding a technology stack for Data Analytics, considering the 4 V's of big data</li>
                 <li>Collect, wrangle, and transform data for further modeling</li>
                 <li>Explore data using statistics and visualizations</li>
                 <li>Creating interactive and visually appealing data visualizations using Tableau</li>
                 <li>Designing intuitive dashboards and reports for data analysis</li>
-                <li>Addressing data security, ethics, and privacy issues in Data Analytics</li>
+                <li>Addressing data security, ethics, and privacy issues in Data Analytics</li> {% endcomment %}
             </ul>
         </div>
     </section>
 {% comment %} 255, 204, 153, {% endcomment %}
-    <section class='card' style="background-color:  rgba(255, 140, 80, 0.45); "> 
+    <section class='card' style="background-color:  rgba(255, 140, 130, 0.45); "> 
         <div class="card-title">  
             <p><strong>Machine Learning</strong><br/> </p>
             <img class="card-img" src="{% static 'blog/images/python.svg'%}" alt="author of the blog"/>
@@ -136,13 +155,19 @@
 
         <div class="card-content">            
             <ul>
-                <li>Good understanding of supervised and unsupervised learning algorithms</li>
+                <li>Strong understanding of supervised and unsupervised learning algorithms</li>
+                <li>Proficient in using Python for machine learning tasks</li>
+                <li>Experience in modeling data with various machine learning algorithms</li>
+                <li>Skilled in hyperparameter tuning to optimize machine learning models</li>
+                <li>Ability to evaluate model-based predictions using relevant techniques</li>
+                <li>Expertise in integrating machine learning and deep learning models into backend applications</li>
+                {% comment %} <li>Good understanding of supervised and unsupervised learning algorithms</li>
                 <li>Proficient in using Python for machine learning tasks</li>
                 <li>Experience in model data using various machine learning algorithms</li>
                 <li>Proficient in performing hyperparameter tuning for optimizing machine learning models</li>
                 <li>Ability to evaluate model-based predictions and apply relevant evaluation techniques</li>
                 <li>Integration of machine learning and deep learning models into backend applications</li>
-                <li>Effective communication of machine learning model outputs to the frontend</li>
+                <li>Effective communication of machine learning model outputs to the frontend</li> {% endcomment %}
             </ul>
         </div>
     </section>
