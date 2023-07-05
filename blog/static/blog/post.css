@@ -12,15 +12,14 @@
     text-decoration: none;
     transition: all 0.2s ease;
     margin: 1rem;    
-
-
+    color: #324851;
   }
   
   .post a:hover,
   .post a:active {
     transform: scale(1.1);
     background-color: #acccd3;
-    color: #EDEDED;
+    color: #e6ebe9;
   }
   
   .post a img {
@@ -28,6 +27,7 @@
     height: auto;
     max-height: 15rem;
     border-radius: 5%;
+    margin: 1rem;
   }
   
   .post h3 {
@@ -48,7 +48,7 @@
 
 .post span{
     background-color: #9bc6bb;
-    color: #EDEDED;
+    color: #e6ebe9;
     border-radius: 10px;
     padding:0.4rem;
     display: inline;

@@ -6,7 +6,7 @@ body {
   }
   
   #main-navigation {
-    background-color:#EDEDED;
+    background-color:#e6ebe9; 
     box-shadow: 0 2px 8px #324851;
   }
 
@@ -52,7 +52,7 @@ body {
   .post a {
     padding: 1rem 0.2rem;
     height: 27rem;
-    background-color: #EDEDED;
+    background-color: #e6ebe9;
     transform-origin: center;
     box-shadow: 0 2px 8px #34675C;
     border-radius: 12px;
