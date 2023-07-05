@@ -12,7 +12,7 @@
 {%block contents%}
 <section class="container">
    <header id="header-container">
-        <img id="me" src=" {% static 'blog/images/woman-notebook.svg'%}" alt="author of the blog"/>
+        {% comment %} <img id="me" src=" {% static 'blog/images/woman-notebook.svg'%}" alt="author of the blog"/> {% endcomment %}
         <h2 id="about-title">My Skills</h2>
    </header>
     <div>
@@ -25,7 +25,7 @@
     </div>
 </section>
     {% comment %} 246, 255, 231, {% endcomment %}
-<section class='card' style="background-color:  rgba(200, 235, 170, 0.5); "   >
+<section class='card' style="background-color:  rgba(200, 235, 170, 0.65); "   >
     <div class="card-title">  
         <p><strong>Object Oriented Programming</strong></p> 
         <img class="card-img" src="{% static 'blog/images/obj.svg'%}" alt="author of the blog"/> 
@@ -43,7 +43,7 @@
 </section>
 
 
-<section class='card' style="background-color: rgba(255, 250, 180, 0.5); "   >
+<section class='card' style="background-color: rgba(255, 250, 180, 0.65); "   >
     <div class="card-title">  
         <p><strong>Web Development </strong></p> 
         <img class="card-img" src="{% static 'blog/images/web.svg'%}" alt="author of the blog"/> 
@@ -70,7 +70,7 @@
     </div>
 </section>
 
-    <section class='card' style="background-color: rgba(255, 230, 153, 0.6);"> 
+    <section class='card' style="background-color: rgba(255, 230, 153, 0.65);"> 
         <div class="card-title">  
             <p><strong>Software Eng. </br>Theory & Principles </strong></p>
             <img class="card-img" src="{% static 'blog/images/internetuser.svg'%}" alt="author of the blog"/>
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <section class='card' style="background-color: rgba(255, 204, 102, 0.6); ">
+    <section class='card' style="background-color: rgba(255, 204, 102, 0.65); ">
         <div class="card-title">  
             <p><strong>Database Management</strong> <br/>  </p>
            <img class="card-img" src="{% static 'blog/images/db.svg'%}" alt="author of the blog"/>
@@ -122,7 +122,7 @@
         </div>
     </section>
 
-    <section class='card' style="background-color:  rgba(255, 165, 90, 0.45); "> 
+    <section class='card' style="background-color:  rgba(255, 165, 90, 0.5); "> 
         <div class="card-title">  
          <p><strong>Data Analytics </strong><br/> </p>
             <img class="card-img" src="{% static 'blog/images/data-analytics.svg'%}" alt="author of the blog"/>
@@ -147,7 +147,7 @@
         </div>
     </section>
 {% comment %} 255, 204, 153, {% endcomment %}
-    <section class='card' style="background-color:  rgba(255, 140, 130, 0.45); "> 
+    <section class='card' style="background-color:  rgba(255, 140, 130, 0.65); "> 
         <div class="card-title">  
             <p><strong>Machine Learning</strong><br/> </p>
             <img class="card-img" src="{% static 'blog/images/python.svg'%}" alt="author of the blog"/>

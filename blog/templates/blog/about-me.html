@@ -13,7 +13,7 @@
 <section id="container">
     <h2 id="about-title">About Me</h2>
     <div id="content">
-      <img id="me" src=" {% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/>
+      {% comment %} <img id="me" src=" {% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/> {% endcomment %}
       <p>With a background in project finance and experience working in a prominent international bank, I have acquired a 
         plethora of transferable skills. These skills, combined with my passion for programming, position me to excel as a software 
         engineer. The unique skill set possessed by project finance bankers holds tremendous potential in driving success within the 
@@ -21,7 +21,7 @@
       </p>
 </section>
     
-    <section id='card' style="background-color: rgba(255, 190, 195, 0.55); "   >
+    <section id='card' style="background-color: rgba(255, 190, 195, 0.65); "   >
         <img id="card-img" src="{% static 'blog/images/prob-solving.svg'%}" alt="author of the blog"/>
         <div class="card-content">
             <p><strong>Problem Solving Skills: </strong><br/>           
@@ -79,7 +79,7 @@
     <section id="container">
     <div>
         <a href='www.linkedin.com/in/akiko-koyama'><img id='logo' src="{% static 'blog/images/LI-In-Bug.png'%}"/></a>
-        <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark-white.svg'%}"/></a>
+        <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark.svg'%}"/></a>
     </div>
 </section>
 {%endblock%}

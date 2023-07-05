@@ -12,15 +12,25 @@
 
 {%block contents%}
 <section id="all-posts">
-
-    <section id="intro">Driven by a passion for continuous growth, I have successfully completed projects utilizing frameworks 
+    <h2>My Projects</h2>
+    <section id="intro">
+        Driven by a passion for continuous growth, I have successfully completed projects utilizing frameworks 
         such as Spring Boot, React, Vue and Django. These projects have provided me with hands-on experience in software engineering, 
-        where I have developed robust applications that leverage the power of modern technologies.</section>
-    <h3>Please click on each project to see further information. </h3>
+        where I have developed robust applications that leverage the power of modern technologies.
+        <p>Please click on each project to see further information. </p>
+    </section>
     <ul>
         {% for p in object_list %}
             {% include  "blog/includes/post.html" %}
         {% endfor %}
     </ul>
 </section>
+
+<section id="container">
+    <div>
+        <a href='www.linkedin.com/in/akiko-koyama'><img id='logo' src="{% static 'blog/images/LI-In-Bug.png'%}"/></a>   
+        <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark.svg'%}"/></a>
+    </div>
+</section>
 {%endblock%}
+
