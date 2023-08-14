@@ -16,46 +16,40 @@
     <section id="welcome">
         <header>
             {% comment %} <img  src="{% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/> {% endcomment %}
-            <h2> My Portfolio</h2>
+            {% comment %} <h2> Akiko Koyama</h2> {% endcomment %}
         </header>
-            <div>
-                <p>
-                    Hi, my name is Akiko. <br/> <br/> With a successful banking career in prestigious financial centers like London, 
-                    Tokyo, and Sydney, I am now embarking on an exciting transition into computer science and software development.
-                    Drawing from my experience as a project finance banker, I bring a unique perspective and valuable skills to 
-                    this new chapter.
-                </p>    
-                <p> In project finance, I mastered intricate aspects such as finance structuring, agreements, negotiations, compliance, 
-                    and more. I discovered that the key to success lies in harmonizing these diverse elements into a seamless whole. 
-                    Interestingly, this resonates with software engineering, where modules, classes, backend, frontend, and databases 
-                    intertwine to create functional applications.
-                </p>
-                <p>
-                    Through my transition, my goal is to make a broader impact and contribute to positive change on a larger scale !
-                    Thank you for visiting, and I look forward to discussing how we can collaborate to create a more impactful and 
-                    technologically advanced future together.
-                </p>
+            <div class="container"> 
+                <div class="img_container"><img src="{% static 'blog/images/woman2.jpg'%}" alt="author of the blog"></div>
+                    <div>
+                        <p>
+                            <em>My name is Akiko Koyama. <br/><br/>
+                                From project finance to software engineering, I weave complexities into seamless solutions...</em>              
+                            
+                            
+                        </p>
+                    </div>
             </div>
     </section>
 
     <section id="latest-posts">
-        <h2>Some of My Latest Projects</h2>
-        <ul>
-            {% for p in object_list  %}
-                {% include  "blog/includes/post.html" %}  <!--p and posts is accessible in post.html as well -->
-            {% endfor %}
-             
-        </ul>
-    </section>
+        <div id="latest-posts__container">
+            <div> 
+                <p id="latest-posts__content">My recent works showcase the integration of powerful machine learning algorithms, 
+                taking applications to new heights of innovation and usefulness. Click on the title to see more about the work.</p>
+            </div>
+            <ul>
+                {% for p in object_list  %}
+                    {% include  "blog/includes/project-highlight.html" %}  <!--p and posts is accessible in post.html as well -->
+                {% endfor %}
+            </ul>
+        </div>
 
     <section id="footer">
-      
             <div>
                 <a href='https://linkedin.com/in/akiko-koyama'><img id='logo' src="{% static 'blog/images/LI-In-Bug.png'%}"/></a>
                 <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark-white.svg'%}"/></a>
             </div>
-        
     </section>
-
+    </section>
 
 {%endblock%}

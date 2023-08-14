@@ -1,0 +1,57 @@
+.project {
+  margin: 1rem 2rem;
+  color: #6A78A9;    
+}
+
+.project__title{
+  display: flex;
+  align-items: center;
+}
+
+.project__tags {
+  display: flex;
+  gap: 0.5rem; /* Add some spacing between tags */
+  align-items: center; /* Vertically center-align the tags */
+}
+.project span{
+  font-family: 'Raleway', serif;
+  font-size: 1rem;
+  background-color: #9bc6bb;
+  color: #e6ebe9;
+  border-radius: 12px;
+  padding:0.4rem;
+}
+
+.project h3 {
+  font-family: 'Raleway', serif;
+  color: #424e75;
+  font-size: 2rem;
+  margin: 0 0.5rem 0 2rem;
+}
+
+.project a {
+  text-decoration: none;   
+  color: #324851;
+}
+
+/* Hide excerpt initially */
+.project__content p {
+  display: none;
+  font-family: 'Raleway', serif;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: justify;
+  margin: 1.5rem;
+}
+
+/* Show excerpt on hover */
+.project:hover .project__content p {
+  display: block;
+}
+
+.project:hover .project__title {
+  display: none;
+}
+

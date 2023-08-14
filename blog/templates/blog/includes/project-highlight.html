@@ -1,0 +1,27 @@
+{% load static%}
+
+{% block css_files%}
+    <link rel="stylesheet" href="{% static "blog/project-highlight.css" %}"/>
+{% endblock%}
+
+<li>
+    <article class="project">
+        <a href="{% url 'post-detail-page' slug=p.slug %}" >  <!--receives slug--> 
+           
+            <div class="project__content">
+                <div class="project__title">
+                    <h3>{{p.title}}  </h3> <!--post['title'] in python but different in django html-->
+                        <div class="prject__tags">
+                            {% for t in p.tag.all %}
+                                <span >{{t.caption}}</span>
+                            {% endfor%}  
+                        </div>
+                   
+                </div>
+                <p>
+                    {{p.excerpt}} 
+                 </p>
+            </div>
+        </a>
+    </article>
+</li>
