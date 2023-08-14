@@ -34,6 +34,7 @@
     <section id="latest-posts">
         <div id="latest-posts__container">
             <div> 
+                <h3 id="project-title">Latest Projects</h3>
                 <p id="latest-posts__content">My recent works showcase the integration of powerful machine learning algorithms, 
                 taking applications to new heights of innovation and usefulness. Click on the title to see more about the work.</p>
             </div>
@@ -42,14 +43,15 @@
                     {% include  "blog/includes/project-highlight.html" %}  <!--p and posts is accessible in post.html as well -->
                 {% endfor %}
             </ul>
+            <section id="footer">
+                <div>
+                    <a href='https://linkedin.com/in/akiko-koyama'><img id='logo' src="{% static 'blog/images/LI-In-Bug.png'%}"/></a>
+                    <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark.svg'%}"/></a>
+                </div>
+        </section>
         </div>
 
-    <section id="footer">
-            <div>
-                <a href='https://linkedin.com/in/akiko-koyama'><img id='logo' src="{% static 'blog/images/LI-In-Bug.png'%}"/></a>
-                <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark-white.svg'%}"/></a>
-            </div>
-    </section>
+
     </section>
 
 {%endblock%}

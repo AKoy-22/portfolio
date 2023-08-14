@@ -13,15 +13,14 @@
 }
 
 #welcome div{
-  border-radius: 8px;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 0 auto;
 }
 
-/* not used */
+
 #welcome img {
-  width: 22rem;
-  height: 25rem;
+  width: 20rem;
+  height: 23rem;
   padding: 0.5rem;
 }
 
@@ -29,7 +28,7 @@
   color: #6A78A9;
   font-size: 1.8rem;
   padding: 0.5rem;
-  margin: 5 rem auto;
+  margin: 2rem auto;
   width: 100%;
   text-align: justify;
 }
@@ -45,65 +44,37 @@
 }
 
 #latest-posts {
-  background-image: url("./images/grass.jpg");
+  /* background-image: url("./images/grass.jpg"); */
+  background-color: rgba(155, 198, 187,0.2);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2rem;
-  background-color: white;
+  padding: 2.5rem;
 }
+
+#project-title{
+  font-family: 'Libre Baskerville', serif;
+  color: #424e75;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
 #latest-posts__content{
   font-family: 'Libre Baskerville', serif;
   color: #424e75;
-  font-size: 1.5rem;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  padding: 1rem 2.5rem;
   margin: 1rem auto;
   width: 100%;
   text-align: justify;
 }
 
-#latest-posts__container{
-  background-color: rgba(155, 198, 187,0.4);
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-#latest-posts h2 {
-  font-family: 'Raleway', serif;
-  color: #424e75;
-  text-align: center;
-  margin: 0;
-  padding: 1rem;;
-}
-
 #latest-posts ul {
   list-style: none;
   margin: 0;
-  padding-bottom: 3rem;
-
 }
 
-#latest-posts li {
-  flex: 1;
- 
-}
-
-#about {
-  text-align: center;
-  padding: 3rem;
-  background-color: #e48900;
-  margin-top: 5rem;
-}
-
-#about h2 {
-  font-size: 3rem;
-}
-
-#about p {
-  font-size: 1.5rem;
-  color: #353535;
-}
 #footer {
   width: 100%;
   height: 8rem;

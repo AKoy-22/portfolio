@@ -10,20 +10,47 @@
 {% endblock%}
 
 {%block contents%}
-<section id="container">
-    <h2 id="about-title">About Me</h2>
-    <div id="content">
-      {% comment %} <img id="me" src=" {% static 'blog/images/woman-standing-with-a-computer-svgrepo-com.svg'%}" alt="author of the blog"/> {% endcomment %}
-      <p>With a background in project finance and experience working in a prominent international bank, I have acquired a 
-        plethora of transferable skills. These skills, combined with my passion for programming, position me to excel as a software 
-        engineer.</div>
-      </p>
+<section class="container">
+  
+    <div id="content" >
+      <p>After a successful banking career, I am now embarking on an exciting transition into software development. 
+        With plethora of transferable skills, strong background in full-stack development and a deep understanding of machine learning,
+        I bring a unique perspective and valuable skills to this new chapter. 
+      </p>   
+    </div>
+      <div id="about-img-container"><img src="{% static 'blog/images/about.png'%}" alt="about image"/></div>
 </section>
+<section class="container">
+
+    <h3 id="soft-skills"></h3>
+    <ul>
+        <li>
+            <strong>Problem Solving Skills: </strong>Excelled as a Project Finance Banker, adeptly navigating complex multi-billion-dollar projects 
+            and now applying the skills to tackle technical obstacles in software engineering.
+        </li>
+        <li>
+            <strong>Analytical Mindset: </strong> Leveraged my Project Finance Banking background to bring a data-driven approach to software engineering, 
+            optimizing performance, and delivering effective solutions.
+        </li>
+        <li>
+            <strong>Interdisciplinary Collaboration: </strong>Cultivated strong interpersonal skills from engaging diverse stakeholders in project finance, 
+            bridging gaps for seamless communication among teams.
+        </li>
+        <li>
+            <strong>Project Management: </strong> Honed project management skills at global institutions, 
+            ensuring efficient planning, execution, and timely delivery in software development projects.
+        </li>
+        <li><strong>Attention to Detail: </strong>Translated meticulous attention to detail from finance to software engineering, 
+            effectively integrating components for cohesive applications.</li>
+
+    </ul>
+</section>
+
     
-    <section id='card' style="background-color: rgba(255, 190, 195, 0.65); "   >
+    {% comment %} <section id='card' style="background-color: rgba(255, 190, 195, 0.65); "   >
         <img id="card-img" src="{% static 'blog/images/prob-solving.svg'%}" alt="author of the blog"/>
         <div class="card-content">
-            <p><strong>Problem Solving Skills: </strong><br/>           
+            <p>         
                 As an experienced Project Finance Banker overseeing multi-billion-dollar projects, I excel in navigating complex challenges. 
                 Transitioning to software engineering, my critical and innovative mindset tackles technical obstacles, driving efficient and 
                 effective development.
@@ -73,9 +100,9 @@
                 finance bankers can be applied to software development, enabling effective integration of modules, classes, and 
                 components to create a cohesive application</p>
         </div>
-    </section>
+    </section> {% endcomment %}
 
-    <section id="container">
+    <section id="footer">
     <div>
         <a href='https://linkedin.com/in/akiko-koyama'><img id='logo' src="{% static 'blog/images/LI-In-Bug.png'%}"/></a>
         <a href='https://github.com/AKoy-22'><img id='logo' src="{% static 'blog/images/github-mark.svg'%}"/></a>
