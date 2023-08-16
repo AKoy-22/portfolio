@@ -48,7 +48,8 @@
     <h2>About this Project</h2>
     <p>{{post.content|linebreaks}}</p>  <!--linebreaks will be preserved from the dummy content-->
 
-    <a id="gitlink" href="https://github.com/AKoy-22/Algebraic_Expression"> Github link to the project repository</a>
+    <a id="gitlink" href="{{post.link}}"> Github link to the project repository</a>
+    {% if post.weblink %}<a id="gitlink" href="{{post.weblink}}"> Link to live project</a> {% endif %} 
 </main>
 
 <main>

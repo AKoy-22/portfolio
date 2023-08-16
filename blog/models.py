@@ -29,7 +29,6 @@ class Post(models.Model):
     image1=models.ImageField(upload_to='images', null=True)
     image2=models.ImageField(upload_to='images', null=True)
     image3=models.ImageField(upload_to='images', null=True)
-    link=models.CharField(max_length=100)
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True)  # db_index=True is set automatically
     content = models.TextField(validators=[MinLengthValidator(10)])
@@ -37,6 +36,8 @@ class Post(models.Model):
     author = models.ForeignKey(
         Author, on_delete=models.SET_NULL, null=True) # related_name="posts",
     tag = models.ManyToManyField(Tag)
+    link=models.URLField(null=True, max_length=200)
+    weblink=models.URLField(null=True, max_length=200)
     
     def __str__(self):
         return f"{self.title} {self.date}"
