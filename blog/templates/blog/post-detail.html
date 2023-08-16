@@ -25,7 +25,7 @@
             <span id="tag">{{t.caption}}</span>
         {% endfor%}
     </div>
-    {% if not has_read_later %}
+    {% comment %} {% if not has_read_later %}
         <div id="read-later">
             <form action="{% url 'read-later' %}" method="POST">
                 {% csrf_token %}
@@ -33,7 +33,7 @@
                 <button>Read Later</button>
             </form>
         </div>
-    {% endif %}
+    {% endif %} {% endcomment %}
 
         
     {% comment %} <article>
@@ -48,7 +48,7 @@
     <h2>About this Project</h2>
     <p>{{post.content|linebreaks}}</p>  <!--linebreaks will be preserved from the dummy content-->
 
-    <a href="https://github.com/AKoy-22/Algebraic_Expression"> Github link to the project repository</a>
+    <a id="gitlink" href="https://github.com/AKoy-22/Algebraic_Expression"> Github link to the project repository</a>
 </main>
 
 <main>
@@ -64,7 +64,7 @@
 </main>
 
 
-<div id="form">
+{% comment %} <div id="form">
 
     <form class="form-control" action="{% url 'post-detail-page' post.slug %}" method="POST">
         {% csrf_token %}    
@@ -91,5 +91,5 @@
             {% endfor %}
         </ul>
     </div>
-{% endif %}
+{% endif %} {% endcomment %}
 {% endblock %}
