@@ -1,5 +1,6 @@
 .project {
-  margin: 1rem 2rem;
+  margin: 0;
+  padding: 0;
   color: #6A78A9;    
 }
 
@@ -10,8 +11,8 @@
 .project__title h3{
   font-family: 'Raleway', serif;
   color: #6d8c85;
-  font-size: 2rem;
-  margin: 1rem 0.5rem;
+  font-size: 1.5rem;
+  margin: 0.6rem 0.5rem;
 }
 .project__tags {
   display: flex;
@@ -33,18 +34,19 @@
 }
 
 /* Hide excerpt initially */
-.project__content p {
+#excerpt {
   display: none;
   font-family: 'Raleway', serif;
   color: #9bc6bb;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 100%;
   text-align: justify;
+  padding-left: 1rem;
 
 }
 
 /* Show excerpt on hover */
-.project:hover .project__content p {
+.project:hover #excerpt{
   display: block;
 }
 

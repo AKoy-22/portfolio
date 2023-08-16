@@ -5,6 +5,7 @@
 
 .container {
   display: flex;
+  align-items: center;
 }
 #welcome header {
   display: flex;
@@ -13,15 +14,12 @@
 }
 
 #welcome div{
-  padding: 1.5rem;
   margin: 0 auto;
 }
 
-
 #welcome img {
-  width: 20rem;
-  height: 23rem;
-  padding: 0.5rem;
+  width: 24em;
+  height: 27rem;
 }
 
 #welcome h3 {
@@ -43,36 +41,35 @@
   text-align: justify;
 }
 
-#latest-posts {
-  /* background-image: url("./images/grass.jpg"); */
+#latest-projects {
   background-color: rgba(155, 198, 187,0.2);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2.5rem;
+  padding: 1rem 8rem 0 8rem;
 }
 
 #project-title{
   font-family: 'Libre Baskerville', serif;
   color: #424e75;
   font-size: 1.3rem;
-  text-align: center;
+  text-align: left;
 }
 
-#latest-posts__content{
+#project-intro-p{
   font-family: 'Libre Baskerville', serif;
   color: #424e75;
-  font-size: 1.3rem;
-  padding: 1rem 2.5rem;
-  margin: 1rem auto;
+  font-size: 1.2rem;
+  margin:0.6rem auto;
   width: 100%;
   text-align: justify;
 }
 
-#latest-posts ul {
+#latest-projects ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 #footer {
@@ -84,6 +81,6 @@
 #footer img{
     width: 3rem;
     height: auto;
-    margin: 3rem 1rem;
+    margin: 0 1rem;
 }
 
