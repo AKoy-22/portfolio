@@ -37,7 +37,7 @@ class Post(models.Model):
         Author, on_delete=models.SET_NULL, null=True) # related_name="posts",
     tag = models.ManyToManyField(Tag)
     link=models.URLField(null=True, max_length=200)
-    weblink=models.URLField(null=True, max_length=200)
+    weblink=models.URLField(null=True, blank=True, max_length=200)
     
     def __str__(self):
         return f"{self.title} {self.date}"

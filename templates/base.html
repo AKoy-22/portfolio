@@ -11,10 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather:wght@300&family=Nunito&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Merriweather:wght@300&family=Nunito&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Merriweather:wght@300&family=Nunito&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+    
+    <!-- Inside the <head> section of your HTML template -->
+    <link rel="icon" href="{% static 'blog/images/logo.png' %}" type="image/x-icon">
+
+
     <title>{% block title%}{% endblock%}</title>
     <link rel="stylesheet" href="{% static 'app.css' %}"/> <!--not picked up by Django settings.py STATICFILES_DIRS-->
     {% block css_files %}{% endblock %}
@@ -22,10 +27,10 @@
 <body>
     <header id="main-navigation">
         <h1><a href="{% url 'starting-page' %}"> Home</a><h1> <!--the name given in urls.py-->
-        <nav><a href="{% url 'posts-page' %}">All Projects</a></nav>
+        <nav><a href="{% url 'posts-page' %}">Projects</a></nav>
         {% comment %} <nav><a href="{% url 'read-later' %}">Stored Posts</a></nav> {% endcomment %}
-        <nav><a href="{% url 'about-me' %}">About Me</a></nav>
-        <nav><a href="{% url 'my-skills' %}">My Skills</a></nav>
+        <nav><a href="{% url 'about-me' %}">About</a></nav>
+        <nav><a href="{% url 'my-skills' %}">Skills</a></nav>
     </header> 
     {% block contents %}
     {% endblock %}
